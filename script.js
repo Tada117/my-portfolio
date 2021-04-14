@@ -26,4 +26,17 @@ $(document).ready(function () {
     e.preventDefault();
   });
 });
-//send mail
+//type writer
+
+var demo = document.getElementById("type-writer");
+
+var typewriter = new Typewriter(demo, {
+  strings: ["Front-end Developer"],
+  cursor: "|",
+  delay: "natural", // 'natural' or Number
+  loop: true, // infinite loop
+  autoStart: true,
+  devMode: false,
+  wrapperClassName: "Typewriter__wrapper",
+  cursorClassName: "Typewriter__cursor",
+});

@@ -9,8 +9,11 @@
     <script
       src="https://kit.fontawesome.com/8f917ec2bc.js"
       crossorigin="anonymous"
-    ></script>
-    <!-- Carousel CSS -->
+    />
+  //  Type writter
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.17.0/core.min.js" integrity="sha512-o6alMAMTI5qAmVC1UvuRPgTl3UOOkP8NZ6212+rq1Oslsuy8Owt9r5Z0Wu0LNxpw/Q8N8ToGiyovHV+kyOulxg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.17.0/core.js" integrity="sha512-zEIjcnW3ahDDI3SvCnEhgx51WrVUWenEPyVhM2YoZWxFwVReYjQFhThktqGgIMidqVWD5xRzNT1sRhPs1cFH5Q==" crossorigin="anonymous"></script>
+  <!-- Carousel CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
@@ -34,7 +37,7 @@
         <ul class="menu">
           <li><a href="#home" class="scroll_to">Home</a></li>
           <li><a href="#about" class="scroll_to">About</a></li>
-          <li><a href="#skills" class="scroll_to">Skill</a></li>
+          <li><a href="#skills" class="scroll_to">Skills</a></li>
           <li><a href="#work" class="scroll_to">Work</a></li>
           <li><a href="#contact" class="scroll_to">Contact</a></li>
         </ul>
@@ -49,8 +52,8 @@
         <div class="home-content">
           <div class="text-1">Hello, my name is</div>
           <div class="text-2">Anh Tu Nguyen</div>
-          <div class="text-3">And I am a <span>Front-end Developer</span></div>
-          <a href="#">Hire Me</a>
+          <div class="text-3">And I am a <span id="type-writer"></span></div>
+          <a href="mailto:ntat.dev@gmail.com">Hire Me</a>
         </div>
       </div>
     </section>
@@ -59,7 +62,6 @@
     <section class="section about" id="about">
       <div class="max-width">
         <h2 class="title">About Me</h2>
-
         <div class="about-content">
           <div class="column left">
             <img src="images/profile.jpg" alt="" />
@@ -70,15 +72,28 @@
             </div>
             <p>
               I am a 4th year student who have bold passion in web development
-              especially in front-end web. I am developing myself to become
-              front-end web developer everyday.
+              especially in front-end web. My goal is to become a fullstack developer.
             </p>
+            
+            <ul >Here are a few technologies I've been working with recently:
+              <li></i>JavaScript (ES6)</li>
+              <li>ReactJS</li>
+              <li>HTML5 & CSS3 (SCSS, styled component)</li>
+              <li>NodeJS</li>
+              <li>Database (MongoDB)</li>
+            </ul>
             <a href="#">Download CV</a>
           </div>
         </div>
+        </div>
+       </section>
         <!-- Skill -->
-        <div class="skill-content" id="skills">
-          <h3 class="title2">
+       <section id="skills" class="section skills">
+        <div class="max-width">
+          <h3 class="title">OMG</h3>
+        <div class="skill-content">
+          <span>Things that I used when learning web development</span>
+          <h3 class="stitle">
             Languages/Libraries/Frameworks I Use as Developer
           </h3>
           <div class="skill-list">
@@ -86,30 +101,36 @@
               <div class="skill-icon-wrapper">
                 <i class="fab fa-html5"></i>
               </div>
+              <span>HTML</span>
             </div>
             <div class="skill-item">
               <div class="skill-icon-wrapper">
                 <i class="fab fa-css3-alt"></i>
               </div>
+               <span>CSS</span>
             </div>
             <div class="skill-item">
               <div class="skill-icon-wrapper">
                 <i class="fab fa-sass"></i>
               </div>
+               <span>SASS</span>
             </div>
             <div class="skill-item">
               <div class="skill-icon-wrapper">
                 <i class="fab fa-bootstrap"></i>
               </div>
+               <span>Bootstrap</span>
             </div>
 
             <div class="skill-item">
               <div class="skill-icon-wrapper"><i class="fab fa-js"></i></div>
+               <span>JavaScript</span>
             </div>
             <div class="skill-item">
               <div class="skill-icon-wrapper">
                 <i class="fab fa-react"></i>
               </div>
+               <span>ReactJS</span>
             </div>
             <div class="skill-item">
               <div class="skill-icon-wrapper">
@@ -118,39 +139,48 @@
                   data-icon="simple-icons:redux"
                   data-inline="false"
                 ></span>
-              </div>
+                </div>
+                <span>Redux</span>
             </div>
             <div class="skill-item">
               <div class="skill-icon-wrapper">
                 <i class="fab fa-node"></i>
               </div>
+               <span>NodeJS</span>
             </div>
           </div>
-          <h3 class="title2">Tools I Use as Developer</h3>
+          <h3 class="stitle">Tools I Use as Developer</h3>
            <div class="skill-list">
             <div class="skill-item">
               <div class="skill-icon-wrapper">
                <span style="fill: black;" class="iconify" data-icon="vscode-icons:file-type-vscode" data-inline="false"></span>
               </div>
+               <span>VSCode</span>
             </div>
             <div class="skill-item">
               <div class="skill-icon-wrapper">
               <span class="iconify" data-icon="akar-icons:github-fill" data-inline="false"></span>
               </div>
+               <span>GitHub</span>
             </div>
             <div class="skill-item">
               <div class="skill-icon-wrapper">
               <span class="iconify" data-icon="cib:postman" data-inline="false"></span>
               </div>
+               <span>Postman</span>
             </div>
             <div class="skill-item">
               <div class="skill-icon-wrapper">
             <span class="iconify" data-icon="cib:npm" data-inline="false"></span>
               </div>
+               <span>NPM</span>
             </div>
-        </div>
       </div>
-    </section>
+      </div>
+      </section>
+    
+   
+
     <!-- Project Section -->
     <section class="section project" id="work">
       <div class="max-width">
@@ -217,7 +247,7 @@
       <div class="max-width">
         <div class="contact-form">
           <h3 class="title">Contact</h3>
-          <span>Have a question or want to work together? </span>
+          <span>I'm currently looking for new opportunities to work as a Fresher Developer </span>
           <form
             action="mailto:ntat.dev@gmail.com"
             method="post"
@@ -256,19 +286,19 @@
         <div class="icon-list">
           <div
             class="icon-wrapper"
-            onclick="window.location='https://google.com';"
+            onclick="window.open('https://google.com')"
           >
             <i class="fab fa-linkedin-in"></i>
           </div>
           <div
             class="icon-wrapper"
-            onclick="window.location='https://google.com';"
+             onclick="window.open('https://github.com/Tada117')"
           >
-            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-github"></i>
           </div>
           <div
             class="icon-wrapper"
-            onclick="window.location='https://google.com';"
+            onclick="window.open('https://google.com')"
           >
             <i class="fab fa-instagram"></i>
           </div>
@@ -278,6 +308,7 @@
     </footer>
 
     <script type="text/javascript"></script>
+    
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
